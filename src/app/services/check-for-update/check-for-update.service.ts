@@ -18,7 +18,7 @@ export class CheckForUpdateService {
 
     everyFiveSecondsOnceAppIsStable$.subscribe(() => {
       console.log('Checking for an update');
-      swUpdate.checkForUpdate()
+      swUpdate.checkForUpdate();
     });
     // if swUpdate.checkForUpdate finds an update then 
     // swUpdate.available will emit an event
