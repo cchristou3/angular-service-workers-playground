@@ -21,11 +21,11 @@ With the server running, point your browser at http://localhost:8080/. Your appl
 
 ## Utilizing the SwUpdate service to listen for version updates
 
-# UpdateService
+### UpdateService
 The UpdateService does the following tasks:
 1) every five seconds it checks whether a new version was released
 2) when found an snackbar pops out that prompts the user to reload the application
-`
+```
 @Injectable({
   providedIn: 'root'
 })
@@ -44,8 +44,8 @@ export class UpdateService {
     });
   }
 }
-`
-# LogUpdateService
+```
+### LogUpdateService
 
 The LogUpdateService is ideal for the following scenario:
 1) when the browser has cached an older version of the application
@@ -53,7 +53,7 @@ The LogUpdateService is ideal for the following scenario:
 3) once the application is stable the browser will compare the hashes between the current
 cached application and its latest version. If inconsistent, then an event is fired in
 swUpdate.available, causing the application to reload after a minor delay.
-`
+```
 @Injectable({
   providedIn: 'root'
 })
@@ -75,12 +75,12 @@ export class LogUpdateService {
     });
   }
 }
-`
+```
 
-# CheckForUpdateService
+### CheckForUpdateService
 
 The CheckForUpdateService class is utilized to monitor the project for updates.
-`
+```
 @Injectable({
   providedIn: 'root'
 })
@@ -102,4 +102,4 @@ export class CheckForUpdateService {
     // swUpdate.available will emit an event
   }
 }
-`
+```
