@@ -1,6 +1,6 @@
-# MyApp
+# Welcome to Anuglar Service Workers Playground
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+This project was generated to act as a testing environment whilst experimenting with Angular's Service Worker feature.
 
 ## Development server
 
@@ -11,9 +11,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Then proceed to run `http-server -p 8080 -c-1 dist/my-app`. A http server will be hosted to
 serve the application. This server is used to test our project locally. 
 
- Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
- The http server caches for each client the version of the application that they are using.
+The http server caches for each client the version of the application that they are using.
 
 ## Initial load
 
@@ -103,3 +101,11 @@ export class CheckForUpdateService {
   }
 }
 ```
+
+## Aknowledgements
+ * [Wise words from an Angular Creator](https://stackoverflow.com/questions/55494181/what-is-the-purpose-of-swupdate-activateupdate-in-angular)
+ * [Official Documentation](https://angular.io/guide/service-worker-getting-started)
+ * [w3resource](https://www.w3resource.com/angular/service-worker-in-production.php)
+ * [Code Samples 1#](https://www.digitalocean.com/community/tutorials/angular-service-worker-updates)
+ * [Code Samples 2#](https://github.com/angular/angular/blob/8fbf40bf4000944c06458472142ca967ef8d3b1d/aio/src/app/shared/location.service.ts#L49-L53)
+ * [Code Samples 3#](https://github.com/angular/angular/blob/8fbf40bf4000944c06458472142ca967ef8d3b1d/aio/src/app/sw-updates/sw-updates.service.ts)
